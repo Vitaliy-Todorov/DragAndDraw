@@ -7,6 +7,7 @@ import android.os.Parcelable;
 public class Box implements Parcelable {
     private PointF mOrigin;
     private PointF mCurrent;
+    private float mDegrees;
 
     public Box(PointF origin) {
         mOrigin = origin;
@@ -23,6 +24,18 @@ public class Box implements Parcelable {
 
     public PointF getOrigin() {
         return mOrigin;
+    }
+
+    public void setOrigin(PointF origin) {
+        mOrigin = origin;
+    }
+
+    public float getDegrees() {
+        return mDegrees;
+    }
+
+    public void setDegrees(float degrees) {
+        mDegrees = degrees;
     }
 
     @Override
